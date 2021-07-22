@@ -1,0 +1,7 @@
+C:\Users\jvcmo\OneDrive\Desktop\alura\chapter 3\byteBank\byteBank\bin\Debug\byteBank.exe.config
+C:\Users\jvcmo\OneDrive\Desktop\alura\chapter 3\byteBank\byteBank\bin\Debug\byteBank.exe
+C:\Users\jvcmo\OneDrive\Desktop\alura\chapter 3\byteBank\byteBank\bin\Debug\byteBank.pdb
+C:\Users\jvcmo\OneDrive\Desktop\alura\chapter 3\byteBank\byteBank\obj\Debug\byteBank.csproj.AssemblyReference.cache
+C:\Users\jvcmo\OneDrive\Desktop\alura\chapter 3\byteBank\byteBank\obj\Debug\byteBank.csproj.CoreCompileInputs.cache
+C:\Users\jvcmo\OneDrive\Desktop\alura\chapter 3\byteBank\byteBank\obj\Debug\byteBank.exe
+C:\Users\jvcmo\OneDrive\Desktop\alura\chapter 3\byteBank\byteBank\obj\Debug\byteBank.pdb
