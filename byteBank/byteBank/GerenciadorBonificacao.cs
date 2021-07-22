@@ -11,7 +11,6 @@ namespace byteBank
     {
         private double _totalBonificacao;
 
-
         //Aqui temos um exemplo de Sobrecargar
         public void Registrar(Funcionario funcionario)
         {

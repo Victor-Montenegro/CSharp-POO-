@@ -11,32 +11,25 @@ namespace byteBank
     {
         static void Main(string[] args)
         {
-            GerenciadorBonificacao gb = new GerenciadorBonificacao();
-
-            Funcionario barbara = new Funcionario();
-
-            barbara.Salario = 2000;
-
-            gb.Registrar(barbara);
-
-
-            Console.WriteLine(barbara.GetBonificacao());
-
-            Diretor Gabriela = new Diretor();
-
-            Gabriela.Salario = 5000;
-
-            gb.Registrar(Gabriela);
-
-
-            Funcionario joao = Gabriela;
-
-            //gb.Registrar(joao);
-
-            Console.WriteLine(Gabriela.Salario);
-            Console.WriteLine(gb.GetTotalBonificacao());
+            //so posso chamar funcionais static dentro do main, pois o main e static, e so pode receber chamar funcoes statics
+            CalcularBonificacao();
 
             Console.ReadLine();
+        }
+
+        public static void CalcularBonificacao()
+        {
+            GerenciadorBonificacao gerenciador = new GerenciadorBonificacao();
+
+            Funcionario carlos = new Designer("123123");
+            GerenteDeConta eduardo = new GerenteDeConta("123213123");
+            Funcionario gabriela = new Diretor("1231232121");
+
+            gerenciador.Registrar(carlos);
+            gerenciador.Registrar(eduardo);
+            gerenciador.Registrar(gabriela);
+
+            Console.WriteLine(gerenciador.GetTotalBonificacao());
         }
     }
 }
