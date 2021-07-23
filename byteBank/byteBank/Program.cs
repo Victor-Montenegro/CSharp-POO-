@@ -1,4 +1,5 @@
 ﻿using byteBank.Funcionarios;
+using byteBank.Sistemas;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,9 +13,29 @@ namespace byteBank
         static void Main(string[] args)
         {
             //so posso chamar funcionais static dentro do main, pois o main e static, e so pode receber chamar funcoes statics
-            CalcularBonificacao();
+            //CalcularBonificacao();
+
+            Autentificar();
 
             Console.ReadLine();
+        }
+
+        public static void Autentificar()
+        {
+            SistemaInterno sistema = new SistemaInterno();
+
+            GerenteDeConta eduardo = new GerenteDeConta("123213123");
+
+            ParceiroComercia ruan = new ParceiroComercia();
+
+            ruan.Senha = "123";
+
+            eduardo.Senha = "123";
+
+            Console.WriteLine(sistema.Autentificacao(eduardo,"123"));
+            Console.WriteLine(sistema.Autentificacao(eduardo,"1234"));
+            Console.WriteLine(sistema.Autentificacao(ruan,"123"));
+
         }
 
         public static void CalcularBonificacao()
